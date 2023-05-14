@@ -1,1 +1,0 @@
-// contains utility functions used in the application
