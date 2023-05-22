@@ -1,21 +1,8 @@
+# For documentation on how to configure this file,
+# see https://diesel.rs/guides/configuring-diesel-cli
+
 [print_schema]
 file = "migrations/schema.rs"
 
-[database]
-# URL for the PostgreSQL database
-url = "postgres://postgres:postgres@localhost:5432/my_database"
-
-# Specify the path to the directory containing your migrations
-migrations_directory = "migrations"
-
-# Use the `postgres` feature for PostgreSQL support
-# Replace with the appropriate feature for your database
-features = ["postgres"]
-
-# Connection pool configuration
-# See https://docs.diesel.rs/diesel/connection/struct.ConnectionOptions.html for more options
-[connection_options]
-idle_timeout = 600
-
-# Specify the default schema for your database
-default_schema = "public"
+[migrations_directory]
+dir = "migrations"
